@@ -6,23 +6,40 @@
 <title>Making bottons</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<style type="text/css">
+#content ul li {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	font-weight: normal;
+	font-variant: normal;
+}
+a:link {
+	color: #03F;
+}
+a:visited {
+	color: #63C;
+}
+a:hover {
+	color: #F0C;
+	text-decoration:underline;
+}
+</style><!-- InstanceEndEditable -->
 <style type="text/css">
 td img {display: block;}
 #content {
 	position:absolute;
 	left:12px;
-	top:249px;
-	width:1256px;
-	height:2321px;
+	top:281px;
+	width:1396px;
+	height:2325px;
 	z-index:1;
 }
 #title {
 	position:absolute;
 	left:10px;
 	top:12px;
-	width:1253px;
-	height:93px;
+	width:1397px;
+	height:97px;
 	z-index:2;
 	font-family: "Comic Sans MS", cursive;
 	font-size: 56px;
@@ -30,22 +47,15 @@ td img {display: block;}
 	text-align: center;
 	vertical-align: middle;
 }
+
 #navibar {
 	position:absolute;
-	left:10px;
-	top:114px;
-	width:891px;
-	height:77px;
-	z-index:3;
-}td img {display: block;}td img {display: block;}td img {display: block;}td img {display: block;}
-#apDiv1 {
-	position:absolute;
-	left:14px;
-	top:122px;
 	width:1248px;
-	height:106px;
+	height:123px;
 	z-index:3;
-}td img {display: block;}
+	top: 137px;
+	left: 12px;
+}td img {display: block;}td img {display: block;}
 </style>
 
 <script language="JavaScript1.2" type="text/javascript">
@@ -102,70 +112,84 @@ function MM_preloadImages() { //v3.0
 
 <body>
 <div id="content"><!-- InstanceBeginEditable name="content" -->
-  <h1>Making bottons with Fireworks</h1>
-  <img src="bottons.png" alt="bottons" />
-  <p>This is the navigation bar made up of bottons created with Fireworks</p>
-  <p><strong>Steps to make bottons</strong></p>
+  <h1>Making buttons with Fireworks</h1>
+  <img src="buttons.png" alt="bottons" />
+  <p>This is the navigation bar made up of buttons created with Fireworks</p>
+  <p><strong>Steps to make buttons</strong></p>
   <ol>
     <li>set up your canvas size according to the size of your navigation bar</li>
-    <li>draw your botton (usually rectangle)</li>
-    <li>with the filter option, add an &quot;Inner Bevel&quot; filter to create a look of an botton</li>
+    <li>draw your buttons (usually rectangle)</li>
+    <li>with the filter option, add an &quot;Inner Bevel&quot; filter to create a look of an buttons</li>
     <li>save it as an symbol</li>
-    <li>drag the number of botton needed for the navigation bar</li>
-    <li>edit the botton by double clicking it</li>
+    <li>drag the number of buttons needed for the navigation bar</li>
+    <li>edit the buttons by double clicking it</li>
     <li>change how it looks when it is over and under (copy up image than change filter option)</li>
-    <li>align the bottons evenly</li>
-    <li>trim your canvas to make it a perfect fit to crop unnecessary white spaces around the botton</li>
+    <li>align the buttons evenly</li>
+    <li>trim your canvas to make it a perfect fit to crop unnecesary white spaces around the buttons</li>
   </ol>
-  <h3>Using the bottons in Dreamweaver</h3>
+  <h3>Using the buttons in Dreamweaver</h3>
   <ol>
     <li>Save the image as a html in dreamweaver with the &quot;export&quot; option</li>
-    <li>In a tempelete document, create an div at the place you want your bottons to show on your page.</li>
+    <li>In a tempelete document, create an div at the place you want your buttons to show on your page.</li>
     <li>Click on insert on the top navigation bar and choose &quot;Fireworks html&quot;.</li>
-    <li>Select your botton file and it should show up in the div you created</li>
-    <li>Then link your bottons to pages on your file</li>
+    <li>Select your buttons file and it should show up in the div you created</li>
+    <li>Then link your buttons to pages on your file</li>
     <li>To recreate the hover effect, first copy the &lt;script&gt; code shown in the browser preview into the head of the tempelete.</li>
-    <li>Then change the link to the images by removing the ../ in the &quot;a herf=&quot; link (use the find and replace option).</li>
+    <li>Then change the link of the images by removing the ../ in the onmouseover= '../image/&quot;link (use the find and replace option).</li>
+  </ol>
+  <h3>Making text links in Dreamweaver</h3>
+  <ul>
+  	<li><a href="index.html">home</a></li>
+  	<li><a href="final-decision.html">final decision</a></li>
+  	<li><a href="making homepage.html">making homepage</a></li>
+  	<li><a href="creating subpages.html">making subpages</a></li>
+  	<li><a href="making navigation.html">making navigations</a></li>
+  </ul>
+  <ol>
+  	<li>first create a list (order/unorder)</li>
+  	<li>Then give it an ID </li>
+  	<li>Then create a CSS rule with the ID name and add &quot;ol/ul li&quot; after it (eg: text ul li) (it will be usually automatically added for you</li>
+  	<li>Then change any settings (eg: font size, font color, alignment, etc.)</li>
+  	<li>Then link the text by highlighting them and with the text inspector window, link it to the desired page</li>
+  	<li>You may create hover/visited effect using a:hover/a:visited. (eg: change the color)</li>
   </ol>
   <p>&nbsp;</p>
 <!-- InstanceEndEditable --></div>
 <div id="title">Miffy's Web Design Planning Site</div>
-<div id="apDiv1">
-  <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1258">
-    <!-- fwtable fwsrc="planning site button.png" fwpage="Page 1" fwbase="FWbutton.gif" fwstyle="Dreamweaver" fwdocid = "2081971112" fwnested="0" -->
+<div id="navibar">
+  <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1400">
+    <!-- fwtable fwsrc="planning-site-buttons" fwpage="Page 1" fwbase="planning-site-buttons.gif" fwstyle="Dreamweaver" fwdocid = "1158392954" fwnested="0" -->
     <tr>
-      <td><img src="images/spacer.gif" width="236" height="1" border="0" alt="" /></td>
-      <td><img src="images/spacer.gif" width="20" height="1" border="0" alt="" /></td>
-      <td><img src="images/spacer.gif" width="236" height="1" border="0" alt="" /></td>
-      <td><img src="images/spacer.gif" width="20" height="1" border="0" alt="" /></td>
-      <td><img src="images/spacer.gif" width="236" height="1" border="0" alt="" /></td>
-      <td><img src="images/spacer.gif" width="20" height="1" border="0" alt="" /></td>
-      <td><img src="images/spacer.gif" width="236" height="1" border="0" alt="" /></td>
-      <td><img src="images/spacer.gif" width="18" height="1" border="0" alt="" /></td>
-      <td><img src="images/spacer.gif" width="236" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="222" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="73" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="222" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="72" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="222" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="70" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="222" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="75" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="222" height="1" border="0" alt="" /></td>
       <td><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
     </tr>
     <tr>
-      <td rowspan="2"><a href="index.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','FWbutton_r1_c1','images/FWbutton_r1_c1_s2.gif','images/FWbutton_r1_c1_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','FWbutton_r1_c1','images/FWbutton_r1_c1_s3.gif',1);"><img name="FWbutton_r1_c1" src="images/FWbutton_r1_c1.gif" width="236" height="106" border="0" id="FWbutton_r1_c1" alt="" /></a></td>
-      <td rowspan="3"><img name="FWbutton_r1_c2" src="images/FWbutton_r1_c2.gif" width="20" height="107" border="0" id="FWbutton_r1_c2" alt="" /></td>
-      <td rowspan="2"><a href="final-decision.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','FWbutton_r1_c3','images/FWbutton_r1_c3_s2.gif','images/FWbutton_r1_c3_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','FWbutton_r1_c3','images/FWbutton_r1_c3_s3.gif',1);"><img name="FWbutton_r1_c3" src="images/FWbutton_r1_c3.gif" width="236" height="106" border="0" id="FWbutton_r1_c3" alt="" /></a></td>
-      <td colspan="3"><img name="FWbutton_r1_c4" src="images/FWbutton_r1_c4.gif" width="276" height="1" border="0" id="FWbutton_r1_c4" alt="" /></td>
-      <td rowspan="2"><a href="creating subpages.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','FWbutton_r1_c7','images/FWbutton_r1_c7_s2.gif','images/FWbutton_r1_c7_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','FWbutton_r1_c7','images/FWbutton_r1_c7_s3.gif',1);"><img name="FWbutton_r1_c7" src="images/FWbutton_r1_c7.gif" width="236" height="106" border="0" id="FWbutton_r1_c7" alt="" /></a></td>
-      <td rowspan="3"><img name="FWbutton_r1_c8" src="images/FWbutton_r1_c8.gif" width="18" height="107" border="0" id="FWbutton_r1_c8" alt="" /></td>
-      <td rowspan="2"><a href="making navigation.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','FWbutton_r1_c9','images/FWbutton_r1_c9_s2.gif','images/FWbutton_r1_c9_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','FWbutton_r1_c9','images/FWbutton_r1_c9_s3.gif',1);"><img name="FWbutton_r1_c9" src="images/FWbutton_r1_c9.gif" width="236" height="106" border="0" id="FWbutton_r1_c9" alt="" /></a></td>
+      <td colspan="6"><img name="planningsitebuttons_r1_c1" src="images/planning-site-buttons_r1_c1.gif" width="881" height="1" border="0" id="planningsitebuttons_r1_c1" alt="" /></td>
+      <td rowspan="2"><a href="creating subpages.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','planningsitebuttons_r1_c7','images/planning-site-buttons_r1_c7_s2.gif','images/planning-site-buttons_r1_c7_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','planningsitebuttons_r1_c7','images/planning-site-buttons_r1_c7_s3.gif',1);"><img name="planningsitebuttons_r1_c7" src="images/planning-site-buttons_r1_c7.gif" width="222" height="112" border="0" id="planningsitebuttons_r1_c7" alt="" /></a></td>
+      <td rowspan="3"><img name="planningsitebuttons_r1_c8" src="images/planning-site-buttons_r1_c8.gif" width="75" height="113" border="0" id="planningsitebuttons_r1_c8" alt="" /></td>
+      <td rowspan="2"><a href="making navigation.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','planningsitebuttons_r1_c9','images/planning-site-buttons_r1_c9_s2.gif','images/planning-site-buttons_r1_c9_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','planningsitebuttons_r1_c9','images/planning-site-buttons_r1_c9_s3.gif',1);"><img name="planningsitebuttons_r1_c9" src="images/planning-site-buttons_r1_c9.gif" width="222" height="112" border="0" id="planningsitebuttons_r1_c9" alt="" /></a></td>
       <td><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
     </tr>
     <tr>
-      <td rowspan="2"><img name="FWbutton_r2_c4" src="images/FWbutton_r2_c4.gif" width="20" height="106" border="0" id="FWbutton_r2_c4" alt="" /></td>
-      <td rowspan="2"><a href="making homepage.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','FWbutton_r2_c5','images/FWbutton_r2_c5_s2.gif','images/FWbutton_r2_c5_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','FWbutton_r2_c5','images/FWbutton_r2_c5_s3.gif',1);"><img name="FWbutton_r2_c5" src="images/FWbutton_r2_c5.gif" width="236" height="106" border="0" id="FWbutton_r2_c5" alt="" /></a></td>
-      <td rowspan="2"><img name="FWbutton_r2_c6" src="images/FWbutton_r2_c6.gif" width="20" height="106" border="0" id="FWbutton_r2_c6" alt="" /></td>
-      <td><img src="images/spacer.gif" width="1" height="105" border="0" alt="" /></td>
+      <td rowspan="2"><a href="index.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','planningsitebuttons_r2_c1','images/planning-site-buttons_r2_c1_s2.gif','images/planning-site-buttons_r2_c1_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','planningsitebuttons_r2_c1','images/planning-site-buttons_r2_c1_s3.gif',1);"><img name="planningsitebuttons_r2_c1" src="images/planning-site-buttons_r2_c1.gif" width="222" height="112" border="0" id="planningsitebuttons_r2_c1" alt="" /></a></td>
+      <td rowspan="2"><img name="planningsitebuttons_r2_c2" src="images/planning-site-buttons_r2_c2.gif" width="73" height="112" border="0" id="planningsitebuttons_r2_c2" alt="" /></td>
+      <td rowspan="2"><a href="final-decision.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','planningsitebuttons_r2_c3','images/planning-site-buttons_r2_c3_s2.gif','images/planning-site-buttons_r2_c3_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','planningsitebuttons_r2_c3','images/planning-site-buttons_r2_c3_s3.gif',1);"><img name="planningsitebuttons_r2_c3" src="images/planning-site-buttons_r2_c3.gif" width="222" height="112" border="0" id="planningsitebuttons_r2_c3" alt="" /></a></td>
+      <td rowspan="2"><img name="planningsitebuttons_r2_c4" src="images/planning-site-buttons_r2_c4.gif" width="72" height="112" border="0" id="planningsitebuttons_r2_c4" alt="" /></td>
+      <td rowspan="2"><a href="making homepage.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_nbGroup('over','planningsitebuttons_r2_c5','images/planning-site-buttons_r2_c5_s2.gif','images/planning-site-buttons_r2_c5_s3.gif',1);" onclick="MM_nbGroup('down','navbar1','planningsitebuttons_r2_c5','images/planning-site-buttons_r2_c5_s3.gif',1);"><img name="planningsitebuttons_r2_c5" src="images/planning-site-buttons_r2_c5.gif" width="222" height="112" border="0" id="planningsitebuttons_r2_c5" alt="" /></a></td>
+      <td rowspan="2"><img name="planningsitebuttons_r2_c6" src="images/planning-site-buttons_r2_c6.gif" width="70" height="112" border="0" id="planningsitebuttons_r2_c6" alt="" /></td>
+      <td><img src="images/spacer.gif" width="1" height="111" border="0" alt="" /></td>
     </tr>
     <tr>
-      <td><img name="FWbutton_r3_c1" src="images/FWbutton_r3_c1.gif" width="236" height="1" border="0" id="FWbutton_r3_c1" alt="" /></td>
-      <td><img name="FWbutton_r3_c3" src="images/FWbutton_r3_c3.gif" width="236" height="1" border="0" id="FWbutton_r3_c3" alt="" /></td>
-      <td><img name="FWbutton_r3_c7" src="images/FWbutton_r3_c7.gif" width="236" height="1" border="0" id="FWbutton_r3_c7" alt="" /></td>
-      <td><img name="FWbutton_r3_c9" src="images/FWbutton_r3_c9.gif" width="236" height="1" border="0" id="FWbutton_r3_c9" alt="" /></td>
+      <td><img name="planningsitebuttons_r3_c7" src="images/planning-site-buttons_r3_c7.gif" width="222" height="1" border="0" id="planningsitebuttons_r3_c7" alt="" /></td>
+      <td><img name="planningsitebuttons_r3_c9" src="images/planning-site-buttons_r3_c9.gif" width="222" height="1" border="0" id="planningsitebuttons_r3_c9" alt="" /></td>
       <td><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
     </tr>
   </table>
