@@ -106,7 +106,7 @@ body,td,th {
 	font-family: "Comic Sans MS", cursive;
 }
 body {
-	background-image: url(../BACKGROUNDPHYSICS.png);
+	background-image: url(../finalpages/BACKGROUNDPHYSICS.png);
 }
 #title {
 	font-size: 36px;
